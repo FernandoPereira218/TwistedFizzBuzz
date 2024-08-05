@@ -60,7 +60,7 @@ namespace TwistedFizzBuzz
                     if (string.IsNullOrEmpty(word))
                         word = i.ToString();
 
-                    sb.Append(string.Format("{0}{1}", word, count == inputs.Count ? "" : ", "));
+                    sb.Append(string.Format("{0}{1}", word, count == inputs.Count - 1 ? "" : ", "));
                     count++;
                 }
             }
